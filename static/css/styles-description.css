@@ -1,0 +1,332 @@
+@font-face {
+    font-family: 'Netflix';
+    src: url('../../fonts/AvenirNextLTPro-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Netflix';
+    src: url('../../fonts/AvenirNextLTPro-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.credits {
+    font-family: system-ui;
+    background: #212429;
+    font-size: 11px;
+    color: white;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.credits a {
+    color: #F865B0;
+    text-decoration: none;
+}
+
+body{
+    background: black;
+    color: white;
+    margin: 0;
+    font-family: Netflix;
+    /* padding-bottom: 108px; */
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgb(93, 92, 92);
+    border-right: 2px solid black;
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: rgb(204, 196, 196);
+}
+
+.header{
+    /* border: 1px solid purple; */
+    padding: 5px 15px 1px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, black 0%, black 50%, rgba(0,0,0, .5) 85% , transparent 100%);
+}
+
+.featured-details{
+    margin-top: -30px;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.movie-name {
+    margin-top: 8px;
+    /* border: 1px solid green; */
+    padding: 1px 15px ;
+}
+
+.tag {
+    /* border: 1px solid red; */
+    padding: 1px 1px ;
+    display: flex;
+    align-items: center;
+}
+
+.tags{
+    /* border: 1px solid green; */
+    display: flex;
+    list-style: none;
+    padding: 1px 20px;
+    margin: 0;
+}
+/* Aqui me quede XDE */
+ul.tag li:nth-child(1){
+    font-weight: bold;
+    color: rgb(112, 205, 114);
+    width: 200px;
+    justify-content: left;
+    position: relative;
+    padding: 1px 15px;
+}
+
+ul.tag li:nth-child(2){
+    color: rgb(105, 103, 103);
+    margin-left: 37px;
+}
+
+ul.tag li:nth-child(3){
+    width: 1px;
+    position: relative;
+    padding: 1px 3px;
+    justify-content: right;
+}
+
+ul.tag li:nth-child(4){
+    color: rgb(105, 103, 103);
+}
+
+
+ul.tag li:nth-child(5){
+    width: 1px;
+    position: relative;
+    padding: 1px 18px;
+    justify-content: right;
+}
+
+.img-category{
+    height: 25px;
+}
+
+.img-category-hd{
+    height: 30px;
+}
+
+.button {
+    /* border: 1px solid blue;  */
+    height: 30px;
+    width: 463px;
+    font-size: 15px;
+    background: white;
+    font-weight: bold;
+    font-family: Netflix;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    justify-content: center;
+    margin: 15px;
+    margin-top: -1px;
+}
+
+.button::before {
+    /* border: solid red; */
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.button.icon-download{
+    background-color: #2B2B2B;
+    color: white;
+}
+
+.icon-play::before{
+    background: url(../../images/icons/play.svg);
+}
+
+.icon-download::before{
+    background: url(../../images/icons/download.svg);
+}
+
+.movie-description{
+    padding-bottom: 10px;
+    margin: 15px;
+    font-size: 15.5px;
+    color: #DEDEDE;
+    line-height: 28px;
+}
+
+.movie-cast{
+    margin: 15px;
+    font-size: 14px;
+    color: #dedede8b;
+}
+
+.movie-production{
+    margin: 15px;
+    font-size: 14px;
+    color: #dedede8b;
+    padding-bottom: 16px;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.more-link {
+    color: #dededed0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button-secondary{
+    background: none;
+    color: #dedede8b;
+    font-size: 14px;
+    font-family: Netflix;
+    min-width: 80px;
+    cursor: pointer;
+    border: none;
+    padding: 0px 1px 20px;
+}
+
+.button-secondary::before{
+    content: '';
+    /* border: 1px solid green; */
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+
+.icon-plus::before{
+    background: url(../../images/icons/plus.svg);
+}
+
+.icon-like::before{
+    background: url(../../images/icons/like.svg);
+}
+
+.icon-share::before{
+    background: url(../../images/icons/email-send.svg);
+}
+
+hr{
+    margin: 15px;
+    width: 122.5px;
+    height:5px;
+    border:none;
+    color:#D22F26;;
+    background-color:#D22F26;
+}
+
+.similar{
+    margin-top: -5px;
+    /* border: 1px solid green; */
+    padding: 1px 15px ;
+}
+
+/* LISTA DE SIMILARES */
+
+.list-content {
+    /* border: 1px solid red; */
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.list-item{
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.list-item:first-child {
+    margin: 0;
+}
+
+.list {
+    /* border: 1px solid green; */
+    padding: 0 1em;
+}
+
+.list-content::-webkit-scrollbar{
+    height: 4px;
+}
+
+.list-content::-webkit-scrollbar-thumb{
+    background: rgb(93, 92, 92);
+    border-radius: 8px;
+}
+
+.list-content::-webkit-scrollbar-thumb:hover{
+    background: rgb(204, 196, 196);
+}
+
+.footer{
+    /* border: 1px solid red; */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    padding: 1em 0 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tab-list{
+    /* border: 1px solid green; */
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    color: #6e6e6e;
+    padding-bottom: 1em;
+}
+
+.tab-list a {
+    color: #6e6e6e;
+}
+
+.tab-item {
+    /* border: 1px solid purple; */
+    text-align: center;
+    font-size: .9em;
+}
+
+.tab-item svg{
+    display: block;
+    margin: auto;
+}
+
+.tab-item path{
+    fill: #6e6e6e;
+}
+
+.tab-item:hover :is(path, span) {
+    fill: white;
+    color: white;
+}
+
+
+
